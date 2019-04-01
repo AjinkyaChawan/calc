@@ -26,6 +26,8 @@ public class Calculate {
 			return CalculateService.div(obj);
 		}else if(obj.getO() == 4) {
 			return CalculateService.mul(obj);
+		}else if(obj.getO() == 5) {
+			return CalculateService.fancyadd(obj);
 		}else {
 			return CalculateService.unidentified(obj);
 		}

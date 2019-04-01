@@ -37,6 +37,14 @@ public class CalculateService {
 		return resobj;				
 
 	}
+	
+	public static ResponseObj fancyadd(RequestObj obj) {
+        
+		ResponseObj resobj = new ResponseObj();
+		resobj.setC(obj.getA()*obj.getA()+obj.getB()*obj.getB());
+		return resobj;			
+
+	}
 
 	public static ResponseObj unidentified(RequestObj obj) {
 		
@@ -46,4 +54,6 @@ public class CalculateService {
 
 	}
 
+	
+	
 }
